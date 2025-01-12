@@ -19,7 +19,7 @@ app.use(cookieParser()); //cookie-parser is a middleware library in Express that
 
 // frontend port assign
 app.use(cors({
-  origin:"http://localhost:5173",
+  origin:"https://chat-application-tau-two.vercel.app",
   methods:["GET","POST","PUT"],
   credentials:true,
 }));
