@@ -11,7 +11,7 @@ import { io } from "socket.io-client";
 // It modifies the state values inside the store.
 
 const BASE_URL =
-  import.meta.env.MODE === "development" ? "https://chat-application-33tjbbolr-mohammad-aqibs-projects-8f45a5e2.vercel.app" : "/";
+  import.meta.env.MODE === "development" ? "https://chat-application-api-nine.vercel.app" : "/";
 export const useAuthStore = create((set, get) => ({
   authUser: null,
   isSigningUp: false,
