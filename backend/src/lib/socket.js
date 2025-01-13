@@ -8,7 +8,7 @@ const server=http.createServer(app);
 
 const io=new Server(server, {
   cors:{
-    origin: "https://quicktalk-application.vercel.app",
+    origin: "https://chat-application-xyz.vercel.app",
     methods:["GET","POST","PUT"],
     credentials:true
   },
