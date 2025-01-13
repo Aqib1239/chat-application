@@ -20,14 +20,14 @@ app.use(cookieParser()); //cookie-parser is a middleware library in Express that
 
 // frontend port assign
 app.use(cors({
-  origin:"https://quicktalk-application.vercel.app",
+  origin:"https://chat-application-xyz.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
   credentials:true,
 }));
 
 // Global Header Middleware
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://quicktalk-application.vercel.app");
+  res.header("Access-Control-Allow-Origin", "https://chat-application-xyz.vercel.app");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
   res.header("Access-Control-Allow-Credentials", "true");
