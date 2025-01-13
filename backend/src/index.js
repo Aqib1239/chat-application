@@ -15,6 +15,7 @@ const __dirname=path.resolve();
 // Extract data from body
 // app.use(express.json());
 app.use(express.json({ limit: '10mb' })); // Adjust the limit as needed
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser()); //cookie-parser is a middleware library in Express that parses cookies attached to the client's HTTP request.
 
 // frontend port assign
