@@ -14,7 +14,7 @@ const PREVIEW_MESSAGES = [
 const SettingsPage = () => {
   const { theme, setTheme } = useThemeStore();
   return (
-    <div className="h-screen pt-20 mx-4 max-w-5xl">
+    <div className="h-screen pt-20 flex flex-col items-center  mx-4 xl:w-full md:w-full sm:w-72">
       <div className="space-y-6">
         <div className="flex flex-col gap-1">
           <h2 className="text-lg font-semibold">Theme</h2>
@@ -37,7 +37,7 @@ const SettingsPage = () => {
                 className="relative h-8 w-full rounded-md overflow-hidden"
                 data-theme={t}
               >
-                <div className="absolute inset-0 grid grid-cols-4 gap-1 p-1">
+                <div className="absolute inset-0 grid grid-cols-2 gap-1 p-1">
                   <div className="rounded bg-primary"></div>
                   <div className="rounded bg-secondary"></div>
                   <div className="rounded bg-accent"></div>
