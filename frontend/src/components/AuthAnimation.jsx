@@ -26,7 +26,7 @@ export default function AuthSlide() {
   }, [isLogin]);
 
   return (
-    <div className="flex justify-center bg-base-transparent items-center w-full py-[124px] px-20 rounded-2xl">
+    <div className="flex justify-center bg-base-transparent items-center w-full py-[124px] xl:px-20 sm:px-0 rounded-2xl">
       {/* Form side */}
       <div
         className={`w-full md:w-1/2 flex items-center justify-center p-8 ${
