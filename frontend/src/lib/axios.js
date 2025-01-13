@@ -1,3 +1,3 @@
 import axios from 'axios';
 
-export const axiosInstance = axios.create({ baseURL: "https://chat-application-api-steel.vercel.app", withCredentials: true });
+export const axiosInstance = axios.create({ baseURL: "https://chat-application-lyart-three.vercel.app", withCredentials: true });
