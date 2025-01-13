@@ -17,7 +17,7 @@ const HomePage = () => {
             <div
               className={`transition-all duration-300 ${
                 selectedUser ? "hidden sm:block " : "block"
-              } w-full sm:w-20`}
+              } w-full xl:w-72 lg:w-[18rem] sm:w-20`}
             >
               <Sidebar />
             </div>
