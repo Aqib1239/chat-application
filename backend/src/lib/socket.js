@@ -10,7 +10,6 @@ const io=new Server(server, {
   cors:{
     origin: "https://quicktalk-application.vercel.app",
     methods:["GET","POST","PUT"],
-    allowedHeaders: ["Content-Type", "Authorization"],
     credentials:true
   },
 });
