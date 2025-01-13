@@ -57,7 +57,7 @@ const MessageInput = () => {
   };
 
   // Check if both text and image are present
-  const isSubmitDisabled = !(text.trim() && imagePreview);
+  const isSubmitDisabled = (text.trim() && imagePreview);
 
   return (
     <div className="p-4 w-full ">
