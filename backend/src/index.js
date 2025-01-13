@@ -22,7 +22,6 @@ app.use(cookieParser()); //cookie-parser is a middleware library in Express that
 app.use(cors({
   origin:"https://quicktalk-application.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
-  allowedHeaders: ["Content-Type", "Authorization"],
   credentials:true,
 }));
 
