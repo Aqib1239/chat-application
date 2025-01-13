@@ -14,7 +14,9 @@ const MESSAGE_SCHEMA = new mongoose.Schema(
     },
     text: {
       type: String,
-      required: true,
+      required: function () {
+        return !this.image; // Only required if image is not present
+      },
     },
     image: {
       type: String,
